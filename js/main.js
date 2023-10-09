@@ -20548,7 +20548,7 @@ function validateForm() {
 
     $.ajax({
       method: 'POST',
-      url: 'https://formsubmit.co/ivytaglife@gmail.com',
+      url: 'https://formsubmit.co/f8043dba539e116557125756f078da7e',
       dataType: 'json',
       accepts: 'application/json',
       data: $(this).serialize(), // Serialize the form data
