@@ -20553,19 +20553,23 @@ function validateForm() {
       accepts: 'application/json',
       data: $(this).serialize(), // Serialize the form data
       success: function(data) {
-        // Handle success
-        console.log(data);
-        // Display your success message to the user
-        alert("Submission was Successful! " + data.message);
-        // Optionally, you can redirect the user to a thank you page
-        // window.location.href = 'thank-you.html';
-      },
-      error: function(err) {
-        // Handle error
+        if (data.success) {
+            // Handle success
+            console.log(data);
+            alert("Submission was Successful! " + data.message);
+            // Optionally, you can redirect the user to a thank you page
+            // window.location.href = 'thank-you.html';
+        } else {
+            // Handle server-side validation errors
+            console.log(data);
+            alert("Oops! There are validation errors. Please check your form and try again.");
+        }
+    },
+    error: function(err) {
+        // Handle network or other errors
         console.log(err);
-        // Display your custom error message to the user
         alert("Oops! Something went wrong. Please try again later.");
-      }
+    }
     });
   });
   ///end of form submission 
