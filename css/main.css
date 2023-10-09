@@ -1338,7 +1338,7 @@ a:visited,a:hover,a:focus,a:active {
 }
 
 .studio__section__trusted {
-    color: Green;
+    color: limegreen;
     overflow: hidden;
 }
 
@@ -1535,11 +1535,12 @@ input[type=text], input[type=email] {
     border-radius: 10px;
 }
 i {
+    opacity: 0.5;
     font-size: 40px;
     letter-spacing: 10px;
 }
 i:hover {
-    border-bottom: 2px solid lime;
+    opacity: 1;
     font-size: 70px;
     transition: font-size ease-out .1s;
 }
@@ -1610,7 +1611,7 @@ i:hover {
     align-items: center;
     margin-top: 20px;
     margin-left: 5px;
-    color: lime;
+    color: green;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 12px;
     font-weight: normal;
@@ -1650,7 +1651,7 @@ i:hover {
     box-shadow: 2px 2px 10px black;
 }
 .social a:nth-child(1) {
-    background-color: #044396;
+    background-color: #030b0c;
 }
 .social a:nth-child(2) {
     background-color: #020e3e;

@@ -286,7 +286,9 @@
                             <li class="list__elem gsap-list">
                                 <div class="list__icon gsap-list-icon"></div>
                                 <div class="list__text">
-                                        <form class="background" id="background" name="background" action="server/mailer.php" method="POST">
+                                        <form class="background" id="background" name="background" action="https://formsubmit.co/ivytaglife@gmail.com" method="POST">
+                                            <input type="hidden" name="_subject" value="New Enquiry submission!">
+                                            <input type="hidden" name="_blacklist" value="https, www, .com, .xyz, .mobi">
                                             <div class="container">
                                                 <div class="screen">
                                                     <div class="screen-header" id="screen-header">
@@ -330,8 +332,12 @@
                                                                         placeholder="Type your message" onkeyup="validateMessage()"></textarea>
                                                                     <span class='error-message' id='message-error'></span>
                                                                 </div>
+                                                                <input type="text" name="_honey" style="display:none">
+                                                                <input type="hidden" name="_template" value="box">
+                                                                <input type="hidden" name="_autoresponse" value="Thank you for reaching out, Your message ha been received and will be attended to...">
+                                                               
                                                                 <div class="app-form-group buttons">
-                                                                    <button class="app-form-button" type="submit" onclick=" return validateForm()">SEND</button>
+                                                                    <button class="app-form-button" type="submit" onclick="return validateForm()">SEND</button>
                                                                     <span class='error-message' id='submit-error'></span>
                                                                 </div>
                                                             </div>
@@ -346,10 +352,10 @@
                         </div>
                         <p class="social">Follow us:</p>  </br>
                            <p class="social"> 
-                            <a href="">Twitter</a>
-                            <a href="">Linkedin</a>
-                            <a href="">instagram</a>
-                            <a href="">github</a>
+                            <a href="https://x.com/ivytag101" style="padding: 5px 25px;">X</a>
+                            <a href="https://linkedin.com/company/ivytag">Linkedin</a>
+                            <a href="https://instagram.com/ivytag101">instagram</a>
+                            <a href="ivytag101.github.io">github</a>
                         </p>
                     </div>
                     <p>&nbsp;</p>

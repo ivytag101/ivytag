@@ -20542,18 +20542,33 @@ function validateForm() {
         return false;
     }
     else {
-        var formdata = 'name =' + fname + '&email =' + email + '&phone =' + phone + '&message =' + message;
-        // AJAX code to submit form.
-        $.ajax({
-            type: "POST",
-            url: "server/mailer.php", //call mailer.php to store form data
-            data: formdata,
-            cache: false,
-            success: function () {
-                producePrompt("Message has been successfully sent. We will reply soon", "submit-error", "forestgreen");
-                return true;
-            }
-        });
+        // Handle form submission with AJAX for any form with the "ajax-form" class
+  $('.background').on('submit', function(event) {
+    event.preventDefault();
+
+    $.ajax({
+      method: 'POST',
+      url: 'https://formsubmit.co/ivytaglife@gmail.com',
+      dataType: 'json',
+      accepts: 'application/json',
+      data: $(this).serialize(), // Serialize the form data
+      success: function(data) {
+        // Handle success
+        console.log(data);
+        // Display your success message to the user
+        alert("Submission was Successful! " + data.message);
+        // Optionally, you can redirect the user to a thank you page
+        // window.location.href = 'thank-you.html';
+      },
+      error: function(err) {
+        // Handle error
+        console.log(err);
+        // Display your custom error message to the user
+        alert("Oops! Something went wrong. Please try again later.");
+      }
+    });
+  });
+  ///end of form submission 
 
     }
 }
