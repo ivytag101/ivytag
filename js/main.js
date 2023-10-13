@@ -20565,9 +20565,11 @@ function validateForm() {
             alert("Oops! There are validation errors. Please check your form and try again.");
         }
     },
-    error: function(err) {
-        // Handle network or other errors
-        console.log(err);
+    error: function(jqXHR, textStatus, errorThrown) {
+        console.log(jqXHR); // Detailed error information
+        console.log(textStatus); // Status text (e.g., "error")
+        console.log(errorThrown); // HTTP error thrown (e.g., "Internal Server Error")
+    
         alert("Oops! Something went wrong. Please try again later.");
     }
     });
