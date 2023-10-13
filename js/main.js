@@ -20448,7 +20448,7 @@ $(document).ready(function () {
     }
 
 })
-var formdata = 'name =' + fname + '&email =' + email + '&phone =' + phone + '&message =' + message;
+var data = 'name =' + fname + '&email =' + email + '&phone =' + phone + '&message =' + message;
 function validateName() {
 
     var fname = document.getElementById('name').value;
@@ -20491,7 +20491,7 @@ function validatePhone() {
         return false;
     }
 
-    producePrompt('Valid number format', 'phone-error', 'green');
+    producePrompt('Number format is valid', 'phone-error', 'green');
     return true;
 
 }
@@ -20556,7 +20556,7 @@ function validateForm() {
         if (data.success) {
             // Handle success
             console.log(data);
-            alert("Submission was Successful! " + data.message);
+            alert("Submission was successful! " + data.message);
             // Optionally, you can redirect the user to a thank you page
             // window.location.href = 'thank-you.html';
         } else {

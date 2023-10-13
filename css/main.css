@@ -1398,6 +1398,15 @@ a:visited,a:hover,a:focus,a:active {
     .header__nav {
         top: 35px;
     }
+
+    .error-message {
+        font-size: 11px;
+        line-height: 0.8;
+        padding: 5px 3px;
+        background-clip: padding-box;
+        background-image:linear-gradient(#201430, #000000), linear-gradient(#c52f0a, #5f1502, #c8ff00);
+    
+    }
 }
 
 button,
@@ -1530,9 +1539,12 @@ input[type=text], input[type=email] {
     line-height: 1;
 }
 .error-message {
-    font-size: 8px;
+    font-size: 11px;
     line-height: 0.8;
-    border-radius: 10px;
+    padding: 5px 3px;
+    background-clip: padding-box;
+    background-image:linear-gradient(#201430, #000000), linear-gradient(#c52f0a, #5f1502, #c8ff00);
+
 }
 i {
     opacity: 0.5;
