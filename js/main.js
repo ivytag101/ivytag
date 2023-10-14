@@ -20448,7 +20448,7 @@ $(document).ready(function () {
     }
 
 })
-var data = 'name =' + fname + '&email =' + email + '&phone =' + phone + '&message =' + message;
+var formdata = 'name =' + fname + '&email =' + email + '&phone =' + phone + '&message =' + message;
 function validateName() {
 
     var fname = document.getElementById('name').value;
