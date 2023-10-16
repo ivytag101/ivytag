@@ -21,7 +21,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
         <link rel="mask-icon" href="assets/img/ivyfavicon.svg">
-        <link rel="shortcut icon" href="assets/img/ivyfavicon.ico">
+        <link rel="shortcut-icon" href="assets/img/ivyfavicon.ico">
         <meta name="msapplication-TileColor" content="lemongreen">
         <meta name="theme-color" content="lemongreen">
         <title>Ivytag * Creative web design studio making dreams come true</title>
@@ -35,6 +35,8 @@
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <script src="js/jquery-3.1.1.js"></script>
+        <!-- Include Swal library -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     </head>
@@ -60,7 +62,7 @@
             </nav>
         </div>
         <div class="position-wrapper">
-            <div class="byline show-desktop">
+            <div class="byline">
                 <span>Making</span>
                 <span>Dreams</span>
                 <span>Come True</span>
@@ -89,7 +91,7 @@
                     </h1>
                 </div>
             </section>
-            <div class="web__section__marker section__marker marker hide-mobile el-st">Web Development</div>
+            <div class="web__section__marker section__marker marker el-st">Web and Software Development</div>
             <section class="web__section section gsap-section-in" id="web">
                 <div class="web__section__content section__content">
                     <h1 class="web__section__h1 section__h1 h1 gsap-para-m">Responsive</h1>
@@ -274,21 +276,22 @@
                                 </div>
                                 <div class="list__text">
                                     <p>TECHNOLOGIES:</p> 
-                                    <br><br><p><span><i class="devicon-angularjs-plain"></i></span><span><i class="devicon-appwrite-plain"></i></span><span><i class="devicon-bootstrap-plain-wordmark"></i></span><span><i class="devicon-css3-plain-wordmark"></i></span><span><i class="devicon-django-plain-wordmark"></i></span></p><br>
-                                    <p><span><i class="devicon-figma-plain"></i></span><span><i class="devicon-gatsby-plain-wordmark"></i></span><span><i class="devicon-git-plain-wordmark"></i></span><span><i class="devicon-github-original"></i></span><span><i class="devicon-graphql-plain-wordmark"></i></span></p><br>
-                                    <p><span><i class="devicon-html5-plain-wordmark"></i></span><span><i class="devicon-javascript-plain"></i></span><span><i class="devicon-mongodb-plain-wordmark"></i></span><span><i class="devicon-mysql-plain-wordmark"></i></span><span><i class="devicon-nextjs-plain-wordmark"></i></span></p><br>
-                                    <p><span><i class="devicon-nodejs-plain"></i></span><span><i class="devicon-php-plain"></i></span><span><i class="devicon-postgresql-plain-wordmark"></i></span><span><i class="devicon-python-plain-wordmark"></i></span><span><i class="devicon-react-original-wordmark"></i></span></p><br>
-                                    <p><span><i class="devicon-sass-original"></i></span><span><i class="devicon-socketio-original-wordmark"></i></span><span><i class="devicon-solidity-plain"></i></span><span><i class="devicon-storybook-plain-wordmark"></i></span><span><i class="devicon-tailwindcss-original-wordmark"></i></span></p><br>
-                                    <p><span><i class="devicon-typescript-plain"></i></span><span><i class="devicon-webpack-plain-wordmark"></i></span><span><i class="devicon-wordpress-plain-wordmark"></i></span></p>
+                                    <div class="container">
+                                    <br><br><p><span><i class="devicon-angularjs-plain icon-container"></i></span><span><i class="devicon-appwrite-plain icon-container2"></i></span><span><i class="devicon-bootstrap-plain-wordmark icon-container3"></i></span><span><i class="devicon-css3-plain-wordmark icon-container4"></i></span><span><i class="devicon-django-plain-wordmark icon-container5"></i></span></p><br>
+                                    <p><span><i class="devicon-figma-plain icon-container6"></i></span><span><i class="devicon-gatsby-plain-wordmark icon-container7"></i></span><span><i class="devicon-git-plain-wordmark icon-container8"></i></span><span><i class="devicon-github-original icon-container9"></i></span><span><i class="devicon-graphql-plain-wordmark icon-container10"></i></span></p><br>
+                                    <p><span><i class="devicon-html5-plain-wordmark icon-container11"></i></span><span><i class="devicon-javascript-plain icon-container4"></i></span><span><i class="devicon-mongodb-plain-wordmark icon-container2"></i></span><span><i class="devicon-mysql-plain-wordmark icon-container7"></i></span><span><i class="devicon-nextjs-plain-wordmark icon-container9"></i></span></p><br>
+                                    <p><span><i class="devicon-nodejs-plain icon-container11"></i></span><span><i class="devicon-php-plain icon-container5"></i></span><span><i class="devicon-postgresql-plain-wordmark icon-container8"></i></span><span><i class="devicon-python-plain-wordmark icon-container10"></i></span><span><i class="devicon-react-original-wordmark icon-container2"></i></span></p><br>
+                                    <p><span><i class="devicon-sass-original icon-container4"></i></span><span><i class="devicon-socketio-original-wordmark icon-container6"></i></span><span><i class="devicon-solidity-plain icon-container8"></i></span><span><i class="devicon-storybook-plain-wordmark icon-container10"></i></span><span><i class="devicon-tailwindcss-original-wordmark icon-container"></i></span></p><br>
+                                    <p><span><i class="devicon-typescript-plain icon-container3"></i></span><span><i class="devicon-webpack-plain-wordmark icon-container5"></i></span><span><i class="devicon-wordpress-plain-wordmark icon-container7"></i></span></p>
+                                    </div>
                                 </div>
                             </li>
                             <hr class="studio__section__hr section__hr list__hr hr">
                             <li class="list__elem gsap-list">
                                 <div class="list__icon gsap-list-icon"></div>
                                 <div class="list__text">
-                                        <form class="background" id="background" name="background" action="https://formsubmit.co/f8043dba539e116557125756f078da7e" method="POST">
-                                            <input type="hidden" name="_subject" value="New Enquiry submission!">
-                                            <input type="hidden" name="_blacklist" value="https, www, .com, .xyz, .mobi">
+                                        <form class="background" id="background" action="https://formsubmit.co/ajax/ivytaglife@gmail.com" method="POST">
+                                            
                                             <div class="container">
                                                 <div class="screen">
                                                     <div class="screen-header" id="screen-header">
@@ -313,7 +316,7 @@
                                                         <div class="screen-body-item">
                                                             <div class="app-form">
                                                                 <div class="app-form-group">
-                                                                    <input class="app-form-control" id="name" name="name" type="text" placeholder="Name"
+                                                                    <input class="app-form-control" id="fname" name="fname" type="text" placeholder="Name"
                                                                         onkeyup="validateName()">
                                                                     <span class='error-message' id='name-error'></span>
                                                                 </div>
@@ -332,10 +335,7 @@
                                                                         placeholder="Type your message" onkeyup="validateMessage()"></textarea>
                                                                     <span class='error-message' id='message-error'></span>
                                                                 </div>
-                                                                <input type="text" name="_honey" style="display:none">
-                                                                <input type="hidden" name="_template" value="box">
-                                                                <input type="hidden" name="_autoresponse" value="Thank you for reaching out, Your message ha been received and will be attended to...">
-                                                               
+                                                                
                                                                 <div class="app-form-group buttons">
                                                                     <button class="app-form-button" type="submit" onclick=" return validateForm()">SEND</button>
                                                                     <span class='error-message' id='submit-error'></span>
@@ -371,8 +371,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="image-container">
-                    <img src="assets/img/sitelogos.png" alt="collection web platform images">
+                <div class="logos-anim logos-img">
+                   <img src="assets/img/logos/AXA.jpg" alt="axabet"><img src="assets/img/logos/bliss.png" alt="bliss cosmetics"><img src="assets/img/logos/CLUBCOMPEE.png" alt="club competitions app"><img src="assets/img/logos/galmstroy-1.png" alt="galmstroy dog foods"><img src="assets/img/logos/hype-logo.png" alt="hypedays, socil media marketer"><img src="assets/img/logos/judithlogo.png" alt="judith fahion home"><img src="assets/img/logos/ne.jpg" alt="new evolution"><img src="assets/img/logos/norra.png" alt="norra ai"><img src="assets/img/logos/sendr.jpg" alt="sendrix crypto">
                 </div>
                 <hr class="studio__section__hr section__hr list__hr hr">
                 <hr class="studio__section__hr section__hr list__hr hr">

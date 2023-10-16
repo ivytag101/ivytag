@@ -19541,7 +19541,7 @@
         Lr.registerPlugin(Nr, jo),
         Lr.core.globals("ScrollTrigger", jo),
         ha(),
-        console.log("%cWith ♥ by Mikael Kraft for ➤ https://ivytag.com", "background: black; color: white; padding: 2ch 3ch;");
+        console.log("%cWith ♥ by Mikael Kraft for ➤ https://ivytag.world", "background: green; color: white; padding: 2ch 3ch;");
     var Od, Id, Nd, zd, Bd, Hd, kd = new pt({
         el: document.querySelector(".js-smooth-scroll"),
         smooth: !0,
@@ -19600,7 +19600,7 @@
                             Od = !0)
                 }
                 ));
-            var e = document.querySelectorAll("a, .btn, button")
+            var e = document.querySelectorAll("a, .btn, button, i")
                 , n = document.querySelectorAll(".text-link");
             function i() {
                 Wd.insertAdjacentHTML("beforeend", '<div class="follower"></div>'),
@@ -20451,7 +20451,7 @@ $(document).ready(function () {
 var formdata = 'name =' + fname + '&email =' + email + '&phone =' + phone + '&message =' + message;
 function validateName() {
 
-    var fname = document.getElementById('name').value;
+    var fname = document.getElementById('fname').value;
 
     if (fname.length == 0) {
 
@@ -20543,37 +20543,42 @@ function validateForm() {
     }
     else {
         // Handle form submission with AJAX for any form with the "ajax-form" class
-  $('.background').on('submit', function(event) {
-    event.preventDefault();
-
-    $.ajax({
-      method: 'POST',
-      url: 'https://formsubmit.co/f8043dba539e116557125756f078da7e',
-      dataType: 'json',
-      accepts: 'application/json',
-      data: $(this).serialize(), // Serialize the form data
-      success: function(data) {
-        if (data.success) {
-            // Handle success
-            console.log(data);
-            alert("Submission was successful! " + data.message);
-            // Optionally, you can redirect the user to a thank you page
-            // window.location.href = 'thank-you.html';
-        } else {
-            // Handle server-side validation errors
-            console.log(data);
-            alert("Oops! There are validation errors. Please check your form and try again.");
-        }
-    },
-    error: function(jqXHR, textStatus, errorThrown) {
-        console.log(jqXHR); // Detailed error information
-        console.log(textStatus); // Status text (e.g., "error")
-        console.log(errorThrown); // HTTP error thrown (e.g., "Internal Server Error")
-    
-        alert("Oops! Something went wrong. Please try again later.");
-    }
-    });
-  });
+        $('.background').on('submit', function(event) {
+            event.preventDefault();
+        
+            $.ajax({
+              method: 'POST',
+              url: 'https://formsubmit.co/ajax/ivytaglife@gmail.com',
+              dataType: 'json',
+              accepts: 'application/json',
+              data: $(this).serialize(), // Serialize the form data
+              success: function(data) {
+                // Handle success
+                console.log(data);
+                // Display success message using Swal
+                Swal.fire({
+                  icon: 'success',
+                  title: 'Success!',
+                  text: data.message,
+                  showConfirmButton: true
+                }).then(function() {
+                  // Optionally, you can redirect the user to a thank you page
+                  // window.location.href = 'thank-you.html';
+                });
+              },
+              error: function(err) {
+                // Handle error
+                console.log(err);
+                // Display custom error message using Swal
+                Swal.fire({
+                  icon: 'error',
+                  title: 'Oops!',
+                  text: 'Something went wrong. Please try again later.',
+                  showConfirmButton: true
+                });
+              }
+            });
+          });
   ///end of form submission 
 
     }

@@ -63,3 +63,125 @@
     /* Distance from center where 1 is far left/far right, 0 is center */
     --distance-percent: calc((var(--distance) / var(--char-center)));
 }
+
+/* Define animation container */
+.logos-anim {
+    
+    flex-direction: row;
+    position: relative;
+    margin: 0 10px ; /* Add margin at the bottom */
+    
+}
+
+.logos-img {
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    animation: smoothie 40s infinite;
+  }
+ 
+.logos-img> img {
+    display: inline-block; /* Display as inline block */
+    vertical-align: middle;
+    width: auto;
+    height: 100px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .logos-img> img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+
+    .logos-anim {
+        display: inline-flex; /* Display as inline flex */
+        flex-direction: row;
+        position: relative;
+        margin: 0 10px ; /* Add margin at the bottom */
+        
+    }
+    
+}
+*{transition: .1s}
+  /*Define Smoothie animation*/
+  @keyframes smoothie {
+      0% {
+        left: -100%;
+      }
+      10% {
+        left: 5%;
+      }
+      20% {
+        left: 10%;
+      }
+      30% {
+        left: 40%;
+      }
+      50% {
+        left: 69%;
+      }
+     100% {
+      left: 105%;
+      
+    }
+  }
+
+  /*devicon*/
+  
+   
+   .icon-container {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+   }
+   
+   @keyframes fadeIn {
+     0% {
+       opacity: 0.2;
+    }
+     100% {
+       opacity: 1;
+    }
+   }
+
+  .icon-container2 {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    animation-delay: 1s;
+  }
+  .icon-container3 {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    animation-delay: 2s;
+  }
+  .icon-container4 {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    animation-delay: 3s;
+  }
+  .icon-container5 {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    animation-delay: 4s;
+  }
+  .icon-container6 {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    animation-delay: 5s;
+  }
+  .icon-container7 {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    animation-delay: 6s;
+  }
+  .icon-container8 {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    animation-delay: 7s;
+  }
+  .icon-container9 {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    animation-delay: 8s;
+  }
+  .icon-container10 {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    animation-delay: 9s;
+  }
+  .icon-container11 {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    animation-delay: 10s;
+  }
