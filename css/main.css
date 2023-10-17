@@ -712,7 +712,7 @@ strong,b,.font-title {
 p {
     max-inline-size: 50ch;
     line-height: 1.7;
-    color: #39ad48;
+    color: goldenrod;
 }
 
 .legende,.marker {
@@ -742,7 +742,7 @@ a:visited,a:hover,a:focus,a:active {
     background-size: 20px 2px,100% 2px,0 2px;
     background-position: calc(20px * -1) 100%,100% 100%,0 100%;
     background-repeat: no-repeat;
-    color:rgb(11, 142, 11);
+    color:rgb(8, 22, 167);
     transition: background-size .3s linear,background-position .3s linear;
 }
 
@@ -1360,7 +1360,7 @@ a:visited,a:hover,a:focus,a:active {
 .holder h6 {
     width: 10px;
     height: 10px;
-    border: 1px solid black;
+    border: 1px solid goldenrod;
     border-radius: 3px;
     position: absolute;
     background: #0f7a0f;
@@ -1384,8 +1384,7 @@ a:visited,a:hover,a:focus,a:active {
         font-size: 11px;
         line-height: 0.8;
         padding: 5px 3px;
-        background-clip: padding-box;
-        background-image:linear-gradient(#201430, #000000), linear-gradient(#c52f0a, #5f1502, #c8ff00);
+        background-image: linear-gradient(GreenYellow, Gold), linear-gradient(#c52f0a, #5f1502, #c8ff00);
     
     }
 }
@@ -1523,8 +1522,7 @@ input[type=text], input[type=email] {
     font-size: 11px;
     line-height: 0.8;
     padding: 5px 3px;
-    background-clip: padding-box;
-    background-image:linear-gradient(#041405, #021f04), linear-gradient(#c52f0a, #5f1502, #c8ff00);
+    background-image:linear-gradient(GreenYellow, Gold), linear-gradient(#c52f0a, #5f1502, #c8ff00);
 
 }
 i {
@@ -1560,7 +1558,7 @@ i:hover {
 }
 
 .app-form-control::placeholder {
-    color: #003311;
+    color: lime;
 
 }
 
@@ -1606,7 +1604,7 @@ i:hover {
     margin-left: 5px;
     color: rgb(11, 114, 11);
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 8px;
+    font-size: 7px;
     font-weight: normal;
 }
 

@@ -105,14 +105,14 @@
     }
     
 }
-*{transition: .1s}
+*{transition: .2s}
   /*Define Smoothie animation*/
   @keyframes smoothie {
       0% {
-        left: -100%;
+        left: -5%;
       }
       10% {
-        left: 5%;
+        left: 0;
       }
       20% {
         left: 10%;
@@ -121,7 +121,10 @@
         left: 40%;
       }
       50% {
-        left: 69%;
+        left: 60%;
+      }
+      80% {
+        leftt: 80%
       }
      100% {
       left: 105%;

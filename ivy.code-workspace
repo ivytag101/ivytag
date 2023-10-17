@@ -5,7 +5,7 @@
 		}
 	],
 	"settings": {
-		"aiXcoder.showTrayIcon": true,
+		"aiXcoder.showTrayIcon": false,
 		"editor.suggest.snippetsPreventQuickSuggestions": false,
 		"git.ignoreLimitWarning": true
 	}
