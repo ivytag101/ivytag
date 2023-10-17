@@ -109,17 +109,9 @@
   /*Define Smoothie animation*/
   @keyframes smoothie {
       0% {
-        left: -30%;
+        left: -1%;
       }
-      10% {
-        left: 0;
-      }
-      20% {
-        left: 20%;
-      }
-      60% {
-        left: 60%;
-      }
+      
      100% {
       left: 105%;
       
