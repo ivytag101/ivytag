@@ -77,7 +77,7 @@
     top: 0;
     left: 0;
     overflow-x: hidden;
-    animation: smoothie 40s infinite;
+    animation: smoothie 30s infinite;
   }
  
 .logos-img> img {
@@ -97,7 +97,7 @@
 
 
     .logos-anim {
-        display: inline-flex; /* Display as inline flex */
+        display: inline-block; /* Display as inline flex */
         flex-direction: row;
         position: relative;
         margin: 0 10px ; /* Add margin at the bottom */
