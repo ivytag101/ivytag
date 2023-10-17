@@ -100,7 +100,7 @@
         display: inline-flex; /* Display as inline flex */
         flex-direction: row;
         position: relative;
-        width: 100%;
+        width: auto;
         align-content: flex-start;
     }
     
@@ -114,8 +114,11 @@
       10% {
         left: -5%;
       }
-      60% {
-        left: 40%;
+      30% {
+        left: 20%;
+      }
+      70% {
+        left: 60%;
       }
      100% {
       left: 103%;
