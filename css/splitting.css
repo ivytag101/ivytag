@@ -92,13 +92,13 @@
     .logos-img> img {
         width: auto;
         height: 50px;
-        margin: 10px;
+        margin-right: 10px;
     }
 
 
     .logos-anim {
         display: inline-flex; /* Display as inline flex */
-        flex-direction: column;
+        flex-direction: row;
         position: relative;
         width: fit-content;
         vertical-align: middle;
