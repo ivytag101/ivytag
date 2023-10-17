@@ -76,13 +76,13 @@
 .logos-img {
     top: 0;
     left: 0;
+    align-content: flex-start;
     overflow-x: hidden;
     animation: smoothie 30s infinite;
   }
  
 .logos-img> img {
     display: inline-block; /* Display as inline block */
-    vertical-align: middle;
     width: auto;
     height: 100px;
     margin-right: 10px;
@@ -90,7 +90,7 @@
 
 @media only screen and (max-width: 768px) {
     .logos-img> img {
-        width: 30px;
+        width: 40px;
         height: 30px;
         margin-right: 10px;
     }
@@ -101,7 +101,7 @@
         flex-direction: row;
         position: relative;
         width: fit-content;
-        vertical-align: middle;
+        align-conten: flex-start;
     }
     
 }
