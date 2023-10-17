@@ -712,7 +712,7 @@ strong,b,.font-title {
 p {
     max-inline-size: 50ch;
     line-height: 1.7;
-    color: goldenrod;
+    color: lime;
 }
 
 .legende,.marker {
@@ -771,7 +771,7 @@ a:visited,a:hover,a:focus,a:active {
     .text-link-nav {
         text-shadow: 5px 5px 20px black;
         background-color: rgba(6, 131, 6, 0.4);
-        color: greenyellow;
+        color: yellow;
     }
 
     .text-link-nav:has(.icon-scroll-top) {
@@ -785,7 +785,7 @@ a:visited,a:hover,a:focus,a:active {
 
 
 .text-link-nav.active, .list__elem.active {
-    color: lime;
+    color: deeppink;
     -webkit-animation: nav-scale 1s;
     animation: nav-scale 1s;
 }
@@ -1360,7 +1360,7 @@ a:visited,a:hover,a:focus,a:active {
 .holder h6 {
     width: 10px;
     height: 10px;
-    border: 1px solid goldenrod;
+    border: 1px solid lime;
     border-radius: 3px;
     position: absolute;
     background: #0f7a0f;
