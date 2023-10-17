@@ -85,23 +85,23 @@
     vertical-align: middle;
     width: auto;
     height: 100px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 768px) {
     .logos-img> img {
-        width: 50px;
+        width: auto;
         height: 50px;
-        margin-right: 20px;
+        margin: 10px;
     }
 
 
     .logos-anim {
-        display: inline-block; /* Display as inline flex */
-        flex-direction: row;
+        display: inline-flex; /* Display as inline flex */
+        flex-direction: column;
         position: relative;
-        margin: 0 10px ; /* Add margin at the bottom */
-        
+        width: fit-content;
+        vertical-align: middle;
     }
     
 }
