@@ -100,8 +100,8 @@
         display: inline-flex; /* Display as inline flex */
         flex-direction: row;
         position: relative;
-        width: fit-content;
-        align-conten: flex-start;
+        width: 100%;
+        align-content: flex-start;
     }
     
 }
