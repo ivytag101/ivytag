@@ -333,7 +333,9 @@
                                                                 <div class="app-form-group">
                                                                     <textarea class="app-form-control" name="message" id="message"
                                                                         placeholder="Type your message" onkeyup="validateMessage()"></textarea>
-                                                                    <span class='error-message' id='message-error'></span>
+                                                                    <input type="hidden" name="_blacklist" value="http, www, https">
+                                                                    <input type="text" name="_honey" style="display:none">
+                                                                        <span class='error-message' id='message-error'></span>
                                                                 </div>
                                                                 
                                                                 <div class="app-form-group buttons">
