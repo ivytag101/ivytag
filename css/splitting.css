@@ -72,7 +72,7 @@
       transform: translateX(0);
         }
           100% {
-              transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-200px * 5));
                 }
                 }
 
@@ -81,24 +81,24 @@
                       transform: translateX(0);
                         }
                           100% {
-                              transform: translateX(calc(-250px * 7));
+                              transform: translateX(calc(-200px * 5));
                                 }
                                 }
                                 .slider {
                                   background: transparent;
                                     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
                                       height: 100px;
-                                        margin:none;
+                                        margin:auto;
                                           overflow: hidden;
                                             position: relative;
-                                              width: 100%;
+                                              width: 965px;
                                               }
                                               .slider::before, .slider::after {
                                                 background: linear-gradient(to right, green 0%, rgba(255, 255, 255, 0) 100%);
                                                   content: "";
-                                                    height: 100px;
+                                                    height: 120px;
                                                       position: absolute;
-                                                        width: 150px;
+                                                        width: 100px;
                                                           z-index: 2;
                                                           }
                                                           .slider::after {
@@ -114,14 +114,14 @@
                                                                       -webkit-animation: scroll 40s linear infinite;
                                                                                 animation: scroll 40s linear infinite;
                                                                                   display: flex;
-                                                                                    width: calc(250px * 14);
+                                                                                    width: calc(200px * 9);
                                                                                     }
                                                                                     .slider .slide {
-                                                                                      height: 100px;
-                                                                                        width: 250px;
+                                                                                      height: 120px;
+                                                                                        width: 200px;
                                                                                         margin: auto;
                                                                                         }
-*{transition: 1s}
+*{transition: 2s}
 
 
   /*devicon*/
