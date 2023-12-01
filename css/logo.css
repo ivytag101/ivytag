@@ -23,7 +23,7 @@
                                         margin: none;
                                           overflow: hidden;
                                             position: relative;
-                                              width: 960px;
+                                              width: 100%;
                                               }
                                               .slider::before, .slider::after {
                                                 background: linear-gradient(to right, green 0%, rgba(255, 255, 255, 0) 100%);
