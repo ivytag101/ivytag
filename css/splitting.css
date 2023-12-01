@@ -88,7 +88,7 @@
                                   background: transparent;
                                     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
                                       height: 100px;
-                                        margin: auto;
+                                        margin:none;
                                           overflow: hidden;
                                             position: relative;
                                               width: 100%;
@@ -98,7 +98,7 @@
                                                   content: "";
                                                     height: 100px;
                                                       position: absolute;
-                                                        width: 250px;
+                                                        width: 150px;
                                                           z-index: 2;
                                                           }
                                                           .slider::after {
@@ -119,7 +119,7 @@
                                                                                     .slider .slide {
                                                                                       height: 100px;
                                                                                         width: 250px;
-                                                                                        margin: 20px;
+                                                                                        margin: auto;
                                                                                         }
 *{transition: cubic-bezier(1, 0, 0, 1)}
 
