@@ -64,67 +64,64 @@
     --distance-percent: calc((var(--distance) / var(--char-center)));
 }
 
-/* Define animation container */
-.logos-anim {
-    
-    flex-direction: row;
-    position: relative;
-    margin: 0 10px ; /* Add margin at the bottom */
-    
-}
-
-.logos-img {
-    top: 0;
-    left: 0;
-    align-content: flex-start;
-    overflow-x: hidden;
-    animation: smoothie 30s infinite;
-  }
- 
-.logos-img> img {
-    display: inline-block; /* Display as inline block */
-    width: auto;
-    height: 100px;
-    margin-right: 10px;
-}
-
-@media only screen and (max-width: 768px) {
-    .logos-img> img {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-    }
+/* Define logo animation  container */
 
 
-    .logos-anim {
-        display: inline-flex; /* Display as inline flex */
-        flex-direction: row;
-        position: relative;
-        width: auto;
-        align-content: flex-start;
-    }
-    
-}
+@-webkit-keyframes scroll {
+  0% {
+      transform: translateX(0);
+        }
+          100% {
+              transform: translateX(calc(-250px * 7));
+                }
+                }
+
+                @keyframes scroll {
+                  0% {
+                      transform: translateX(0);
+                        }
+                          100% {
+                              transform: translateX(calc(-250px * 7));
+                                }
+                                }
+                                .slider {
+                                  background: transparent;
+                                    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+                                      height: 100px;
+                                        margin: auto;
+                                          overflow: hidden;
+                                            position: relative;
+                                              width: 960px;
+                                              }
+                                              .slider::before, .slider::after {
+                                                background: linear-gradient(to right, green 0%, rgba(255, 255, 255, 0) 100%);
+                                                  content: "";
+                                                    height: 100px;
+                                                      position: absolute;
+                                                        width: 200px;
+                                                          z-index: 2;
+                                                          }
+                                                          .slider::after {
+                                                            right: 0;
+                                                              top: 0;
+                                                                transform: rotateZ(180deg);
+                                                                }
+                                                                .slider::before {
+                                                                  left: 0;
+                                                                    top: 0;
+                                                                    }
+                                                                    .slider .slide-track {
+                                                                      -webkit-animation: scroll 40s linear infinite;
+                                                                                animation: scroll 40s linear infinite;
+                                                                                  display: flex;
+                                                                                    width: calc(250px * 14);
+                                                                                    }
+                                                                                    .slider .slide {
+                                                                                      height: 100px;
+                                                                                        width: 250px;
+                                                                                        }
 *{transition: .2s}
-  /*Define Smoothie animation*/
-  @keyframes smoothie {
-      0% {
-        left: -103%;
-      }
-      10% {
-        left: -5%;
-      }
-      30% {
-        left: 20%;
-      }
-      70% {
-        left: 60%;
-      }
-     100% {
-      left: 103%;
-      
-    }
-  }
+
 
   /*devicon*/
   
