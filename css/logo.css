@@ -4,7 +4,7 @@
       transform: translateX(0);
         }
           100% {
-              transform: translateX(calc(-250px * 9));
+              transform: translateX(calc(-250px * 10));
                 }
                 }
 
@@ -13,7 +13,7 @@
                       transform: translateX(0);
                         }
                           100% {
-                              transform: translateX(calc(-250px * 9));
+                              transform: translateX(calc(-250px * 10));
                                 }
                                 }
                                 .slider {
