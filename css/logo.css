@@ -56,9 +56,9 @@
                                                                                         margin: 8px;
                                                                                         
                                                                                         }
-                                                                                        .slider .slide:first-child {
+                                                                                        /* .slider .slide:first-child {
                                                                                           transform: translateX(1px);
                                                                                           left: calc(1px * 1);
                                                                                           transition: left .2s ease-in;
                                                                                         
-                                                                                        }
+                                                                                        } */
