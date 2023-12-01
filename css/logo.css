@@ -60,5 +60,5 @@
                                                                                           transform: translateX(250px);
                                                                                           left: calc(250px * 2);
                                                                                           transition-property: left;
-                                                                                          transition-delay: 2s ease-in;
+                                                                                        
                                                                                         }
