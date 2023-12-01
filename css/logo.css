@@ -4,7 +4,7 @@
       transform: translateX(0);
         }
           100% {
-              transform: translateX(calc(-250px * 8));
+              transform: translateX(calc(-250px * 9));
                 }
                 }
 
@@ -13,14 +13,14 @@
                       transform: translateX(0);
                         }
                           100% {
-                              transform: translateX(calc(-250px * 8));
+                              transform: translateX(calc(-250px * 9));
                                 }
                                 }
                                 .slider {
                                   background: transparent;
                                     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
                                       height: 100px;
-                                        margin: auto;
+                                        margin: none;
                                           overflow: hidden;
                                             position: relative;
                                               width: 960px;
@@ -30,7 +30,7 @@
                                                   content: "";
                                                     height: 100px;
                                                       position: absolute;
-                                                        width: 200px;
+                                                        width: 150px;
                                                           z-index: 2;
                                                           }
                                                           .slider::after {
@@ -46,7 +46,7 @@
                                                                       -webkit-animation: scroll 40s linear infinite;
                                                                                 animation: scroll 40s linear infinite;
                                                                                   display: flex;
-                                                                                    width: calc(250px * 16);
+                                                                                    width: calc(250px * 18);
                                                                                     }
                                                                                     .slider .slide {
                                                                                       height: 100px;
