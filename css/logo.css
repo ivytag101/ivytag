@@ -5,7 +5,7 @@
       delay: 2s;
         }
           100% {
-              transform: translateX(calc(-250px * 10));
+              transform: translateX(calc(-250px * 9));
                 }
                 }
 
@@ -15,7 +15,7 @@
                       delay: 2s;
                         }
                           100% {
-                              transform: translateX(calc(-250px * 10));
+                              transform: translateX(calc(-250px * 9));
                                 }
                                 }
                                 .slider {
@@ -25,7 +25,7 @@
                                         margin: auto;
                                           overflow: hidden;
                                             position: relative;
-                                              width: 100%;
+                                              width: auto;
                                               }
                                               .slider::before, .slider::after {
                                                 background: linear-gradient(to right, green 0%, rgba(255, 255, 255, 0) 100%);
@@ -57,7 +57,7 @@
                                                                                         
                                                                                         }
                                                                                         .slider .slide:first-child {
-                                                                                          
+                                                                                          transform: translateX(250px);
                                                                                           left: calc(250px * 2);
                                                                                           transition-property: left;
                                                                                           transition-delay: 2s ease-in;
