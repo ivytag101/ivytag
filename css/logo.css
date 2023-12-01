@@ -57,8 +57,8 @@
                                                                                         
                                                                                         }
                                                                                         .slider .slide:first-child {
-                                                                                          transform: translateX(250px);
-                                                                                          left: calc(250px * 2);
+                                                                                          transform: translateX(10px);
+                                                                                          left: calc(10px * 2);
                                                                                           transition-property: left;
                                                                                         
                                                                                         }
