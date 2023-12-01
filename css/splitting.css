@@ -72,7 +72,7 @@
       transform: translateX(0);
         }
           100% {
-              transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-200px * 7));
                 }
                 }
 
@@ -91,7 +91,7 @@
                                         margin: auto;
                                           overflow: hidden;
                                             position: relative;
-                                              width: 960px;
+                                              width: 100%;
                                               }
                                               .slider::before, .slider::after {
                                                 background: linear-gradient(to right, green 0%, rgba(255, 255, 255, 0) 100%);
@@ -118,9 +118,10 @@
                                                                                     }
                                                                                     .slider .slide {
                                                                                       height: 100px;
-                                                                                        width: 250px;
+                                                                                        width: 200px;
+                                                                                        margin-right: 5px;
                                                                                         }
-*{transition: .2s}
+*{transition: cubic-bezier(1, 0, 0, 1)}
 
 
   /*devicon*/
