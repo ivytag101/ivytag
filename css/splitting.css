@@ -72,7 +72,7 @@
       transform: translateX(0);
         }
           100% {
-              transform: translateX(calc(-200px * 5));
+              transform: translateX(calc(-200px * 4));
                 }
                 }
 
@@ -81,7 +81,7 @@
                       transform: translateX(0);
                         }
                           100% {
-                              transform: translateX(calc(-200px * 5));
+                              transform: translateX(calc(-200px * 4));
                                 }
                                 }
                                 .slider {
@@ -114,14 +114,14 @@
                                                                       -webkit-animation: scroll 40s linear infinite;
                                                                                 animation: scroll 40s linear infinite;
                                                                                   display: flex;
-                                                                                    width: calc(200px * 10);
+                                                                                    width: calc(200px * 9);
                                                                                     }
                                                                                     .slider .slide {
                                                                                       height: 120px;
                                                                                         width: 200px;
                                                                                         margin: auto;
                                                                                         }
-*{transition: 3s}
+
 
 
   /*devicon*/
