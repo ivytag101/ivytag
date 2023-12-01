@@ -1,8 +1,9 @@
 
 @-webkit-keyframes scroll {
   0% {
-      transform: translateX(5%);
-      delay: 2s;
+      transform: translateX(2%);
+      delay: .2s;
+      transition: all .2s ease-in;
         }
           100% {
               transform: translateX(calc(-250px * 9));
@@ -11,8 +12,9 @@
 
                 @keyframes scroll {
                   0% {
-                      transform: translateX(5%);
-                      delay: 2s;
+                      transform: translateX(2%);
+                      delay: .2s;
+                      transition: all .2s ease-in;
                         }
                           100% {
                               transform: translateX(calc(-250px * 9));
