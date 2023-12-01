@@ -55,8 +55,8 @@
                                                                                         
                                                                                         }
                                                                                         .slider .slide:first-child {
-                                                                                          opacity: 0.2;
-                                                                                          left: 250px;
+                                                                                          
+                                                                                          left: calc(250px * 2);
                                                                                           transition-property: left;
-                                                                                          transition-duration: 1s ease-in;
+                                                                                          transition-duration: 2s ease-in;
                                                                                         }
