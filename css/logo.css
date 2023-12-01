@@ -59,6 +59,6 @@
                                                                                         .slider .slide:first-child {
                                                                                           transform: translateX(1px);
                                                                                           left: calc(1px * 1);
-                                                                                          transition-property: left;
+                                                                                          transition: left .2s ease-in;
                                                                                         
                                                                                         }
