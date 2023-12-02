@@ -53,14 +53,14 @@
                                                                                     width: calc(250px * 18);
                                                                                     }
                                                                                     .slider .slide {
-                                                                                      height: 100px;
+                                                                                        height: 100px;
                                                                                         width: 250px;
                                                                                         margin: 8px;
                                                                                         
                                                                                         }
-                                                                                         .slider .slide:first-child {
-                                                                                          
-                                                                                          left: 8px;
-                                                                                          transition: left .2s ease-in;
+                                                                                    .slider .slide:first-child {
+                                                                                          scroll-behavior: smooth;
+                                                                                          left: 16px;
+                                                                                          transition: left 1s ease-in;
                                                                                         
                                                                                         }
