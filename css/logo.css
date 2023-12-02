@@ -62,7 +62,7 @@
                                                                                           scroll-behavior: smooth;
                                                                                           left: 0;
                                                                                           
-                                                                                          -webkit-transition: left 4s ease-in;  
-                                                                                          transition: left 4s ease-in;
+                                                                                          -webkit-transition: left .4s ease-in;  
+                                                                                          transition: left .4s ease-in;
                                                                                         
                                                                                         }
