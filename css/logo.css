@@ -61,6 +61,7 @@
                                                                                     .slider .slide:first-child {
                                                                                           scroll-behavior: smooth;
                                                                                           left: 16px;
-                                                                                          transition: left 1s ease-in;
+                                                                                          -webkit-transition: opacity 2s ease-in;  
+                                                                                          transition: opacity 2s ease-in;
                                                                                         
                                                                                         }
