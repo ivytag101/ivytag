@@ -1,1 +1,1 @@
-include: [".well-known"]
+include: [".well-known/apple-developer-merchantid-domain-association"]
